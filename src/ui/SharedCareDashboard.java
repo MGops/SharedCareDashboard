@@ -1,9 +1,11 @@
 package ui;
 
 import javax.swing.*;
+import ui.panels.topPanel;
 import java.awt.*;
 
 public class SharedCareDashboard {
+    private topPanel topPanel;
 
     public SharedCareDashboard() {
 
@@ -15,6 +17,11 @@ public class SharedCareDashboard {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        JPanel mainPanel = new JPanel();
+        mainPanel.setLayout(new BorderLayout());
+        frame.add(mainPanel);
+
+        mainPanel.add(topPanel, BorderLayout.NORTH);
 
         frame.setVisible(true);
     }
