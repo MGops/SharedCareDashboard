@@ -21,6 +21,7 @@ public class SharedCareDashboard {
         mainPanel.setLayout(new BorderLayout());
         frame.add(mainPanel);
 
+        topPanel = new topPanel(this);
         mainPanel.add(topPanel, BorderLayout.NORTH);
 
         frame.setVisible(true);

@@ -12,12 +12,11 @@ public class topPanel extends JPanel{
 
     public topPanel(SharedCareDashboard sharedCareDashboard) {
         this.sharedCareDashboard = sharedCareDashboard;
-        JPanel navPanel = new JPanel();
-        navPanel.setLayout(new FlowLayout());
+        this.setLayout(new FlowLayout());
         JButton backButton = new JButton("Back");
-        navPanel.add(backButton);
+        this.add(backButton);
         JButton addButton = new JButton("Add");
-        navPanel.add(addButton);
+        this.add(addButton);
     }
         
     
