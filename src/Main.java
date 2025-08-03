@@ -1,6 +1,4 @@
-package src;
-
-import src.ui.SharedCareDashboard;
+import ui.SharedCareDashboard;
 
 public class Main {
     public static void main(String[] args) {
